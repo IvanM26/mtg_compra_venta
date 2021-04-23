@@ -1,0 +1,14 @@
+---
+title: "Repositorio de Carpetas de MTG"
+output: html_document
+---
+
+- Millanes Ivan (ivanmillanes26@gmail.com).
+    - [CARPETA VENTA](https://scryfall.com/@IvanM26/decks/8f7b21c0-98a4-497e-adaa-72c10ab89c53)
+    - [RARAS CAJA COLUMNA 2](https://scryfall.com/@IvanM26/decks/cbd14ee6-7cc6-47df-914c-8c0129d6939f)
+
+- Sr Piqo.
+    - [Carpeta Venta/Tradeo](https://scryfall.com/@piqo/decks/63c9739a-bf2b-4b03-bfde-53799d453b5e)
+
+- Leo.
+    - [Vendo](https://scryfall.com/@LeoL/decks/39ae60d5-1437-4b71-a15c-92b74b2c202e)
