@@ -2930,28 +2930,8 @@ summary {
 <div id="cartas-a-la-venta" class="section level1">
 <h1>Cartas a la Venta</h1>
 <p>Listado de vendedores con información de contacto y links a las carpetas de venta subidas a <a href="https://scryfall.com/">Scryfall</a></p>
-<pre class="r"><code>library(magrittr)
-readxl::read_xlsx(&quot;datos.xlsx&quot;) %&gt;% 
-  dplyr::mutate(LINK = paste0(&quot;&lt;a href=&#39;&quot;, LINK_SCRYFALL, &quot;&#39;&gt;&quot;, LINK_TEXT, &quot;&lt;/a&gt;&quot;)) %&gt;% 
-  dplyr::select(-c(LINK_TEXT, LINK_SCRYFALL)) %&gt;% 
-  DT::datatable(escape = FALSE)</code></pre>
-<div id="htmlwidget-8f2356ef066a731a97b2" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8f2356ef066a731a97b2">{"x":{"filter":"none","data":[["1","2","3","4"],["Ivan Millanes","Ivan Millanes","Sr Piqo","Leo"],["ivanmillanes26@gmail.com","ivanmillanes26@gmail.com",null,null],["<a href='https://scryfall.com/@IvanM26/decks/8f7b21c0-98a4-497e-adaa-72c10ab89c53'>CARPETA VENTA<\/a>","<a href='https://scryfall.com/@IvanM26/decks/cbd14ee6-7cc6-47df-914c-8c0129d6939f'>RARAS CAJA COLUMNA 2<\/a>","<a href='https://scryfall.com/@piqo/decks/63c9739a-bf2b-4b03-bfde-53799d453b5e'>Carpeta Venta/Tradeo<\/a>","<a href='https://scryfall.com/@LeoL/decks/39ae60d5-1437-4b71-a15c-92b74b2c202e'>Vendo<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Vendedor<\/th>\n      <th>Contacto<\/th>\n      <th>LINK<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
-<ul>
-<li><strong>Millanes Ivan</strong> (<a href="mailto:ivanmillanes26@gmail.com" class="email">ivanmillanes26@gmail.com</a>).
-<ul>
-<li><a href="https://scryfall.com/@IvanM26/decks/8f7b21c0-98a4-497e-adaa-72c10ab89c53">CARPETA VENTA</a></li>
-<li><a href="https://scryfall.com/@IvanM26/decks/cbd14ee6-7cc6-47df-914c-8c0129d6939f">RARAS CAJA COLUMNA 2</a></li>
-</ul></li>
-<li><strong>Sr Piqo</strong>.
-<ul>
-<li><a href="https://scryfall.com/@piqo/decks/63c9739a-bf2b-4b03-bfde-53799d453b5e">Carpeta Venta/Tradeo</a></li>
-</ul></li>
-<li><strong>Leo</strong>.
-<ul>
-<li><a href="https://scryfall.com/@LeoL/decks/39ae60d5-1437-4b71-a15c-92b74b2c202e">Vendo</a></li>
-</ul></li>
-</ul>
+<div id="htmlwidget-886b10277c73f26c2926" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-886b10277c73f26c2926">{"x":{"filter":"none","data":[["1","2","3","4"],["Ivan Millanes","Ivan Millanes","Sr Piqo","Leo"],["ivanmillanes26@gmail.com","ivanmillanes26@gmail.com",null,null],["<a href='https://scryfall.com/@IvanM26/decks/8f7b21c0-98a4-497e-adaa-72c10ab89c53'>CARPETA VENTA<\/a>","<a href='https://scryfall.com/@IvanM26/decks/cbd14ee6-7cc6-47df-914c-8c0129d6939f'>RARAS CAJA COLUMNA 2<\/a>","<a href='https://scryfall.com/@piqo/decks/63c9739a-bf2b-4b03-bfde-53799d453b5e'>Carpeta Venta/Tradeo<\/a>","<a href='https://scryfall.com/@LeoL/decks/39ae60d5-1437-4b71-a15c-92b74b2c202e'>Vendo<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Vendedor<\/th>\n      <th>Contacto<\/th>\n      <th>LINK<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
