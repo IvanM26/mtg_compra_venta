@@ -9,8 +9,9 @@ knit: (function(input_file, encoding) {
 output: html_document
 ---
 
-# Cartas a la Venta
+# Cartas a la Venta {.tabset}
 
+## Carpetas
 Listado de vendedores con información de contacto y links a las carpetas de venta subidas a [Scryfall](https://scryfall.com/)
 
 ```{r, echo=FALSE}
@@ -19,4 +20,10 @@ readxl::read_xlsx("datos.xlsx") %>%
   dplyr::mutate(LINK = paste0("<a href='", LINK_SCRYFALL, "'>", LINK_TEXT, "</a>")) %>% 
   dplyr::select(-c(LINK_TEXT, LINK_SCRYFALL)) %>% 
   DT::datatable(escape = FALSE)
+```
+
+## Buscar Singles
+```{r, echo=FALSE}
+readxl::read_xlsx("lista_cartas_procesada.xlsx") %>% 
+  DT::datatable()
 ```
