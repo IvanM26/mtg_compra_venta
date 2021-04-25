@@ -1,3 +1,5 @@
+# PRIMERO RUN scrape.R, despues Knit repo_carpetas.Rmd. Commit y Push index.html
+
 library(tidyverse)
 library(readxl)
 library(rvest)
