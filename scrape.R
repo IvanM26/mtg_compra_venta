@@ -32,6 +32,10 @@ for (i in 1:n_listas){
     )
   
   listado_cartas_vendedor[[i]] <- cartas_vendedor_i
+  
+  message(paste(vendedor_i, "terminado."))
+  
+  Sys.sleep(1)
 }
 
 tabla <- bind_rows(listado_cartas_vendedor)
