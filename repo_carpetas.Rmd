@@ -14,7 +14,7 @@ output: html_document
 ## Carpetas
 Listado de vendedores con información de contacto y links a las carpetas de venta subidas a [Scryfall](https://scryfall.com/)
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 library(magrittr)
 readxl::read_xlsx("datos.xlsx") %>% 
   dplyr::mutate(LINK = paste0("<a href='", LINK_SCRYFALL, "'>", LINK_TEXT, "</a>")) %>% 
